@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de Accidentes</title>
+</head>
+<body>
+    <h1>Registro de Accidentes de Tránsito</h1>
+
+    <form id="accidenteForm">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea>
+
+        <label for="costo">Costo Económico Estimado:</label>
+        <input type="number" id="costo" required>
+
+        <label for="muertos">Número de Muertos:</label>
+        <input type="number" id="muertos" required>
+
+        <label for="heridos">Número de Heridos:</label>
+        <input type="number" id="heridos" required>
+
+        <label for="vehiculos">Cantidad de Vehículos Involucrados:</label>
+        <input type="number" id="vehiculos" required>
+
+        <button type="submit">Agregar Accidente</button>
+    </form>
+
+    <h2>Accidentes Registrados</h2>
+    <ul id="accidenteList"></ul>
+
+    <h2>Dashboard</h2>
+    <p>Total de accidentes: <span id="totalAccidentes">0</span></p>
+    <p>Total de vehículos involucrados: <span id="totalVehiculos">0</span></p>
+    <p>Total de muertos: <span id="totalMuertos">0</span></p>
+    <p>Total de heridos: <span id="totalHeridos">0</span></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
